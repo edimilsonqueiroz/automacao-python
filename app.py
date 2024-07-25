@@ -3,6 +3,9 @@ from time import sleep
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
+## pip install webdriver-manager
+## pip install selenium
+
 servico = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=servico)
 navegador.get('https://app.powerbi.com')
